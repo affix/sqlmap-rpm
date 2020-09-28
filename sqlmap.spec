@@ -59,3 +59,6 @@ ln -s ../../..%{_sysconfdir}/sqlmap.conf .
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 
 %changelog
+* Mon Sep 28 2020 Keiran Smith <contact@keiran.scot> 1.3.4.44-dev
+- new package
+
