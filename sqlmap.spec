@@ -6,13 +6,13 @@
 %global __provides_exclude_from ^%{_datadir}/%{name}/udf/.*$
 
 Name:           sqlmap
-Version:        1.3.4.45
+Version:        1.3.4.46
 Release:        dev
 Summary:        Automatic SQL injection and database takeover tool
 Group:          Security
 License:        GPL
 URL:            http://sqlmap.org/
-Source0:        https://github.com/sqlmapproject/sqlmap/tarball/master/sqlmap-1.3.4.44.tar.gz
+Source0:        %{name}-%{version}.tar.gz 
 BuildArch:      noarch
 Requires:       python3-requests
 
@@ -59,7 +59,9 @@ ln -s ../../..%{_sysconfdir}/sqlmap.conf .
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 
 %changelog
+* Mon Sep 28 2020 Keiran Smith <contact@keiran.scot> 1.3.4.46-dev
+- tito (contact@keiran.scot)
+- tito (contact@keiran.scot)
+
 * Mon Sep 28 2020 Keiran Smith <contact@keiran.scot> 1.3.4.45-dev
 - new package built with tito
-
-* Thu Sep 25 2019 Keiran Smith <opensource@keiran.scot> - 1.3.4.44
